@@ -26,8 +26,8 @@ Module.expectedDataFileDownloads++;
     var REMOTE_PACKAGE_NAME = typeof Module['locateFile'] === 'function' ?
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
-    var REMOTE_PACKAGE_SIZE = 36168168;
-    var PACKAGE_UUID = '72264941-4749-4cf5-a950-d16e2ccdbf06';
+    var REMOTE_PACKAGE_SIZE = 36673671;
+    var PACKAGE_UUID = 'ad1ffa31-e181-4149-afad-7723690a597c';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -127,13 +127,13 @@ Module['FS_createPath']('/', 'Resources', true, true);
         this.requests[this.name] = null;
       },
     };
-      new DataRequest(0, 130596, 0, 0).open('GET', '/mainData');
-    new DataRequest(130596, 130617, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
-    new DataRequest(130617, 30812841, 0, 0).open('GET', '/sharedassets0.assets');
-    new DataRequest(30812841, 32918908, 0, 0).open('GET', '/sharedassets0.resource');
-    new DataRequest(32918908, 34090480, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
-    new DataRequest(34090480, 35665516, 0, 0).open('GET', '/Resources/unity_default_resources');
-    new DataRequest(35665516, 36168168, 0, 0).open('GET', '/Resources/unity_builtin_extra');
+      new DataRequest(0, 132564, 0, 0).open('GET', '/mainData');
+    new DataRequest(132564, 132585, 0, 0).open('GET', '/methods_pointedto_by_uievents.xml');
+    new DataRequest(132585, 31134705, 0, 0).open('GET', '/sharedassets0.assets');
+    new DataRequest(31134705, 33423559, 0, 0).open('GET', '/sharedassets0.resource');
+    new DataRequest(33423559, 34595983, 0, 0).open('GET', '/Il2CppData/Metadata/global-metadata.dat');
+    new DataRequest(34595983, 36171019, 0, 0).open('GET', '/Resources/unity_default_resources');
+    new DataRequest(36171019, 36673671, 0, 0).open('GET', '/Resources/unity_builtin_extra');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
